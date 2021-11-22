@@ -1,0 +1,23 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Gimme My Number</title>
+</head>
+<body>
+    <script>
+      var userstring = prompt("Which floor do yoou work on?");
+      var usernum = parseInt(userstring, 10);
+
+        while (usernum > 20) {
+            console.log("You entered: "+usernum+"but there are only 20 floors in this building. Try again...")
+            userstring = prompt("Which floor do yoou work on?");
+            usernum = parseInt(userstring, 10);
+
+        }
+        console.log("Congrats! You work on floor:" + usernum);
+        
+
+
+    </script>
+
+</body>
+</html>

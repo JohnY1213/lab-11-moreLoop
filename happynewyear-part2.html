@@ -1,0 +1,34 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Happy New Year part2</title>
+</head>
+<body>
+    <script>
+        function countDown(start) {
+            console.log(start);
+
+            let nextNumber = start - 1;
+
+            if (nextNumber > 0) {
+                //countDown(nextNumber);
+                setTimeout(countDown, 1000, nextNumber);
+
+
+
+            }
+            else {
+                //console.log("Happy New Year!");
+                setTimeout(console.log, 1000,"Happy New Year!")
+
+            }
+        }
+
+        var count = parseInt(prompt("How many seconds ball drops"), 10);
+      
+        countDown(count);
+
+
+    </script>
+
+</body>
+</html>
